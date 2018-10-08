@@ -18,7 +18,7 @@ def receive_stream():
       Store stream in message variable.
       >> metaData['beam'] : Stores Beam_energy value.
       >> metaData['repRate'] : Stores repetition_rate value.
-      >> imgData : global variable tha stores generated image.
+      >> imgData : global variable that stores the generated image.
     """
     with source(host = 'localhost',port=3000, mode = PULL) as stream:
 
