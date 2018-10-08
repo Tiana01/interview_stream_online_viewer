@@ -65,7 +65,7 @@ To stop the stream press **CTRL + C**.
 > NOTE: Always make sure to be in the directory that contains the python scripts you are running. In this case, stream_online_viewer
 
 ### Receive stream
-To run the data receiver:
+To run the data receiver from the ROOT:
 ```bash
 export PYTHONPATH=$(pwd):${PYTHONPATH}
 python stream_online_viewer/stream_receiver.py
