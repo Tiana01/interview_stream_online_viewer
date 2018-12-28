@@ -1,8 +1,6 @@
 from random import random
-
 import numpy
 from matplotlib import pyplot
-
 
 def get_stream_message_data(image, metadata):
     """
@@ -11,7 +9,6 @@ def get_stream_message_data(image, metadata):
     :param metadata: Metadata to add to the message.
     :return: Dictionary with stream message payload.
     """
-
     stream_data = {
         "image": image,
         "image_size_x": image.shape[1],
@@ -21,9 +18,7 @@ def get_stream_message_data(image, metadata):
     }
 
     stream_data.update(metadata)
-
     return stream_data
-
 
 def generate_image(size_x=640, size_y=480, beam_size_x=10, beam_size_y=8, noise=0.1):
     """
@@ -52,7 +47,6 @@ def generate_image(size_x=640, size_y=480, beam_size_x=10, beam_size_y=8, noise=
 
     return image
 
-
 def generate_metadata(beam_energy_base=5, repetition_rate=100):
     """
     Generate metadata to be send over with every image.
@@ -64,10 +58,4 @@ def generate_metadata(beam_energy_base=5, repetition_rate=100):
     }
 
 
-def display_image(image):
-    """
-    Debug method to display image on screen.
-    :param image: Image to display.
-    """
-    pyplot.imshow(image)
-    pyplot.show()
+
